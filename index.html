@@ -1,500 +1,867 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Datenschutzerklärung</title>
-  <style>
-    /* Schriftarten: passe die Dateinamen/Schriftfamilien an */
-    @font-face {
-      font-family: 'HeadingFont';
-      src: url('heading-font.woff2') format('woff2');
-    }
-    @font-face {
-      font-family: 'BodyFont';
-      src: url('body-font.woff2') format('woff2');
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprangerworks Privacy Policy</title>
 
-    html, body {
-      margin: 0;
-      padding: 0;
-      min-height: 100%;
-      background: linear-gradient(to bottom, rgb(128,87,168), rgb(80,50,130));
-      font-family: 'BodyFont', Arial, sans-serif;
-      overscroll-behavior: contain;
-    }
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #111;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
 
-    body {
-      display: flex;
-    }
+        #header {
+            background: #222;
+            padding: 8px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
 
-    /* Sidebar */
-    #sidebar {
-      width: 80px;
-      background-color: black;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 20px;
-      height: 100vh;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 10;
-    }
+        #container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px;
+        }
 
-    #sidebar button {
-      margin: 10px 0;
-      padding: 10px;
-      width: 50px;
-      cursor: pointer;
-      border: none;
-      background-color: #333;
-      color: white;
-      transition: background-color 0.3s, transform 0.2s;
-    }
+        h2 {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
 
-    #sidebar button:hover {
-      background-color: #555;
-      transform: scale(1.1);
-    }
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
 
-    #sidebar button.active {
-      background-color: #777;
-    }
+        p {
+            line-height: 1.45;
+            white-space: pre-line;
+            overflow-wrap: anywhere;
+        }
 
-    /* Content */
-    #content {
-      margin-left: 80px;
-      padding: 20px;
-      color: white;
-      width: 100%;
-      box-sizing: border-box;
-      min-height: 200vh; /* genug, um scrollen zu können */
-      background: linear-gradient(to bottom, rgb(128,87,168), rgb(80,50,130));
-    }
+        select {
+            width: 180px;
+            padding: 8px;
+            font-size: 16px;
+            background: #333;
+            color: white;
+            border: 2px solid #555;
+            border-radius: 6px;
+            outline: none;
+        }
 
-    h1 {
-      margin-top: 0;
-      padding: 10px;
-      background-color: black;
-      position: sticky;
-      top: 0;
-      z-index: 5;
-      font-family: 'HeadingFont', Arial, sans-serif;
-    }
-  </style>
+        #language-container {
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
 </head>
+
 <body>
-  <div id="sidebar">
-    <button id="btn-DE" onclick="setLanguage('DE')">DE</button>
-    <button id="btn-EN" onclick="setLanguage('EN')">EN</button>
-    <button id="btn-FR" onclick="setLanguage('FR')">FR</button>
-    <button id="btn-ES" onclick="setLanguage('ES')">ES</button>
-    <button id="btn-IT" onclick="setLanguage('IT')">IT</button>
-  </div>
 
-  <div id="content">
-    <h1>Privacy Policy</h1>
-    <p id="text"></p>
-  </div>
+    <div id="header">Sprangerworks</div>
 
-  <script>
-    const translations = {
-      DE: `
-        Allgemeine Geschäftsbedingungen (AGB)
-        \n
-        \n1. Geltungsbereich
-        \nDiese AGB regeln die Nutzung der App. 
-        \nMit der Nutzung stimmt die Nutzerin/der Nutzer diesen Bedingungen zu.
-        \n
-        \n2. Nutzung der App
-        \nDie App wird kostenfrei bereitgestellt und enthält Werbung. 
-        \nEine Nutzung ist nur bei Zustimmung zu den AGB möglich.
-        \nDie App darf nur im Rahmen der gesetzlichen Vorschriften und dieser AGB genutzt werden.
-        \nEs ist untersagt, technische Schutzmaßnahmen zu umgehen oder die App zu manipulieren.
-        \nInhalte der App dürfen nicht ohne unsere Zustimmung kopiert oder verbreitet werden.
-        \n
-        \n3. Werbung
-        \nEs werden Werbeanzeigen eingeblendet, die von Dritten stammen. 
-        \nFür deren Inhalt übernehmen wir keine Haftung.
-        \nBei Klick auf eine Anzeige können Nutzer auf externe Websites oder Apps weitergeleitet werden, 
-        \nderen Inhalte außerhalb unseres Einflussbereichs liegen.
-        \nDie angezeigte Werbung kann auf Grundlage anonymer oder pseudonymer Nutzungsdaten personalisiert werden, 
-        \nsofern der Nutzer zuvor eingewilligt hat.
-        \n
-        \n4. Haftung
-        \nWir haften nur bei Vorsatz oder grober Fahrlässigkeit. Für Schäden durch Werbung oder externe Inhalte übernehmen wir keine Verantwortung.
-        \n
-        \n5. Datenschutzrichtlinie (Privacy Policy)
-        \nDaten werden gemäß unserer Datenschutzerklärung verarbeitet.
-        \na) Erhobene Daten
-        \nGeräteinformationen (z. B. Modell, Betriebssystemversion, eindeutige Gerätekennungen)
-        \nIP-Adresse und allgemeine Standortinformationen
-        \nNutzungsverhalten in der App (z. B. aufgerufene Seiten, Anzeigeninteraktionen)
-        \n
-        \nb). Zweck der Datenverarbeitung
-        \nAnzeige von Werbung und Messung ihrer Leistung
-        \nVerbesserung des Nutzererlebnisses
-        \nFehleranalyse und Sicherheit der App
-        \n
-        \nc) Drittanbieter & Werbung
-        \nWir nutzen folgende Werbedienstleister, die im Auftrag Daten verarbeiten können:
-        \n
-        \nGoogle AdMob (Google Ireland Limited)
-        \nDatenschutzerklärung: https://policies.google.com/privacy
-        \n
-        \nDieser Anbieter kann Cookies oder ähnliche Technologien einsetzen, um personalisierte Werbung anzuzeigen.
-        \nIn der EU holen wir vorab die Einwilligung des Nutzers über einen Consent-Dialog ein.
-        \n
-        \nd) Rechtsgrundlage
-        \nEinwilligung (Art. 6 Abs. 1 lit. a DSGVO) für personalisierte Werbung
-        \nBerechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO) für nicht-personalisierte Werbung und App-Sicherheit
-        \n
-        \n6. Widerruf und Opt-out
-        \nNutzer können ihre Einwilligung jederzeit in den App-Einstellungen widerrufen.
-        \nMit dem Widerruf wird der Nutzerin/dem Nutzer der weitere Zugriff zur App verwehrt.
-        \nNicht-personalisierte Werbung kann weiterhin angezeigt werden.
-        \n
-        \n7. Speicherdauer
-        \nDaten werden nur so lange gespeichert, wie es für die Erfüllung der genannten Zwecke erforderlich ist.
-        \n
-        \n8. Rechte der Nutzer
-        \nDie Nutzerin/der Nutzer hat das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit.
-        \nAnfragen bitte an die folgende Email richten: [MAIL]
-        \n
-        \n9. Änderungen
-        \nWir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte Rechtslagen oder technische Änderungen in der App anzupassen.
-        \nWir können die App und AGB jederzeit ändern. 
-        \nÄnderungen werden entsprechend bekannt gegeben.
-        \n
-        \n10. Anwendbares Recht
-        \nEs gilt deutsches Recht, soweit zwingende Verbraucherrechte des Nutzers nicht entgegenstehen.
-        \n
-        \n11. Zustimmung
-        \nMit der Zustimmung zu den AGB erklärt die Nutzerin/der Nutzer, diese gelesen und akzeptiert zu haben. 
-        \nOhne Zustimmung ist eine Nutzung nicht möglich.
-        `,
-      EN: `
-        General Terms and Conditions (GTC)
-        \n
-        \n1. Scope
-        \nThese GTC govern the use of the app. 
-        \nBy using the app, the user agrees to these terms.
-        \n
-        \n2. Use of the app
-        \nThe app is provided free of charge and contains advertising. 
-        \nUse is only permitted if the user accepts these GTC.
-        \nThe app may only be used in compliance with legal requirements and these GTC.
-        \nIt is prohibited to circumvent technical protection measures or manipulate the app.
-        \nContent of the app may not be copied or distributed without our consent.
-        \n
-        \n3. Advertising
-        \nAdvertisements from third parties are displayed. 
-        \nWe accept no liability for their content.
-        \nBy clicking on an ad, users may be redirected to external websites or apps, 
-        \nthe content of which is beyond our control.
-        \nThe displayed advertising may be personalized on the basis of anonymous or pseudonymous usage data, 
-        \nprovided the user has given prior consent.
-        \n
-        \n4. Liability
-        \nWe are only liable for intent or gross negligence. We accept no responsibility for damage caused by advertising or external content.
-        \n
-        \n5. Privacy Policy
-        \nData is processed in accordance with our privacy policy.
-        \na) Data collected
-        \nDevice information (e.g. model, operating system version, unique device identifiers)
-        \nIP address and general location information
-        \nUsage behavior in the app (e.g. pages viewed, ad interactions)
-        \n
-        \nb) Purpose of data processing
-        \nDisplay of advertising and measurement of its performance
-        \nImprovement of user experience
-        \nError analysis and app security
-        \n
-        \nc) Third parties & advertising
-        \nWe use the following advertising providers who may process data on our behalf:
-        \n
-        \nGoogle AdMob (Google Ireland Limited)
-        \nPrivacy policy: https://policies.google.com/privacy
-        \n
-        \nThis provider may use cookies or similar technologies to display personalized advertising.
-        \nIn the EU, we obtain user consent in advance via a consent dialog.
-        \n
-        \nd) Legal basis
-        \nConsent (Art. 6 (1) lit. a GDPR) for personalized advertising
-        \nLegitimate interest (Art. 6 (1) lit. f GDPR) for non-personalized advertising and app security
-        \n
-        \n6. Withdrawal and opt-out
-        \nUsers may withdraw their consent at any time in the app settings.
-        \nUpon withdrawal, the user will no longer be granted access to the app.
-        \nNon-personalized advertising may still be displayed.
-        \n
-        \n7. Storage period
-        \nData will only be stored for as long as necessary to fulfill the stated purposes.
-        \n
-        \n8. User rights
-        \nUsers have the right to access, rectification, erasure, restriction of processing and data portability.
-        \nRequests should be sent to the following email: [MAIL]
-        \n
-        \n9. Changes
-        \nWe reserve the right to adapt this privacy policy to changed legal requirements or technical changes in the app.
-        \nWe may change the app and GTC at any time. 
-        \nChanges will be announced accordingly.
-        \n
-        \n10. Applicable law
-        \nGerman law applies, unless mandatory consumer rights of the user contradict this.
-        \n
-        \n11. Consent
-        \nBy agreeing to the GTC, the user declares that they have read and accepted them. 
-        \nUse is not possible without consent.
-        `,
-      FR: `
-        Conditions générales d'utilisation (CGU)
-        \n
-        \n1. Champ d'application
-        \nLes présentes CGU régissent l'utilisation de l'application. 
-        \nEn utilisant l'application, l'utilisateur accepte ces conditions.
-        \n
-        \n2. Utilisation de l'application
-        \nL'application est fournie gratuitement et contient de la publicité. 
-        \nL'utilisation n'est possible qu'en acceptant les CGU.
-        \nL'application ne peut être utilisée que conformément à la loi et aux présentes CGU.
-        \nIl est interdit de contourner les mesures de protection techniques ou de manipuler l'application.
-        \nLe contenu de l'application ne peut pas être copié ou distribué sans notre accord.
-        \n
-        \n3. Publicité
-        \nDes annonces de tiers sont affichées. 
-        \nNous n'assumons aucune responsabilité pour leur contenu.
-        \nEn cliquant sur une annonce, l'utilisateur peut être redirigé vers des sites web ou applications externes, 
-        \ndont le contenu échappe à notre contrôle.
-        \nLa publicité affichée peut être personnalisée sur la base de données d'utilisation anonymes ou pseudonymes, 
-        \nsi l'utilisateur y a préalablement consenti.
-        \n
-        \n4. Responsabilité
-        \nNous ne sommes responsables qu'en cas de faute intentionnelle ou de négligence grave. Nous déclinons toute responsabilité pour les dommages causés par la publicité ou les contenus externes.
-        \n
-        \n5. Politique de confidentialité
-        \nLes données sont traitées conformément à notre politique de confidentialité.
-        \na) Données collectées
-        \nInformations sur l'appareil (modèle, version du système, identifiants uniques)
-        \nAdresse IP et informations générales de localisation
-        \nComportement d'utilisation dans l'application (pages consultées, interactions publicitaires)
-        \n
-        \nb) Finalité du traitement
-        \nAffichage de publicité et mesure de ses performances
-        \nAmélioration de l'expérience utilisateur
-        \nAnalyse des erreurs et sécurité de l'application
-        \n
-        \nc) Tiers et publicité
-        \nNous utilisons les prestataires suivants, qui peuvent traiter des données pour notre compte:
-        \n
-        \nGoogle AdMob (Google Ireland Limited)
-        \nPolitique de confidentialité: https://policies.google.com/privacy
-        \n
-        \nCe prestataire peut utiliser des cookies ou des technologies similaires pour afficher des publicités personnalisées.
-        \nDans l'UE, nous recueillons le consentement de l'utilisateur via une boîte de dialogue.
-        \n
-        \nd) Base légale
-        \nConsentement (art. 6 al. 1 a RGPD) pour la publicité personnalisée
-        \nIntérêt légitime (art. 6 al. 1 f RGPD) pour la publicité non personnalisée et la sécurité de l'application
-        \n
-        \n6. Retrait et opt-out
-        \nL'utilisateur peut retirer son consentement à tout moment dans les paramètres de l'application.
-        \nEn cas de retrait, l'utilisateur n'aura plus accès à l'application.
-        \nLa publicité non personnalisée peut toujours être affichée.
-        \n
-        \n7. Durée de conservation
-        \nLes données ne sont conservées que le temps nécessaire pour atteindre les objectifs mentionnés.
-        \n
-        \n8. Droits des utilisateurs
-        \nL'utilisateur a le droit d'accès, de rectification, d'effacement, de limitation du traitement et de portabilité des données.
-        \nLes demandes doivent être envoyées à l'adresse e-mail suivante : [MAIL]
-        \n
-        \n9. Modifications
-        \nNous nous réservons le droit d'adapter cette politique de confidentialité en fonction des évolutions légales ou techniques de l'application.
-        \nNous pouvons modifier l'application et les CGU à tout moment. 
-        \nLes modifications seront communiquées en conséquence.
-        \n
-        \n10. Droit applicable
-        \nLe droit allemand s'applique, sauf dispositions légales obligatoires du pays de l'utilisateur.
-        \n
-        \n11. Consentement
-        \nEn acceptant les CGU, l'utilisateur déclare les avoir lues et acceptées. 
-        \nL'utilisation n'est pas possible sans consentement.
-        `,
-      ES: `Términos y condiciones generales (TCG)
-        \n
-        \n1. Ámbito de aplicación
-        \nEstos TCG regulan el uso de la aplicación. 
-        \nAl usar la aplicación, el usuario acepta estas condiciones.
-        \n
-        \n2. Uso de la aplicación
-        \nLa aplicación se proporciona de forma gratuita e incluye publicidad. 
-        \nSu uso solo es posible aceptando los TCG.
-        \nLa aplicación solo puede utilizarse de acuerdo con la ley y estos TCG.
-        \nEstá prohibido eludir medidas de protección técnicas o manipular la aplicación.
-        \nEl contenido de la aplicación no puede copiarse ni distribuirse sin nuestro consentimiento.
-        \n
-        \n3. Publicidad
-        \nSe muestran anuncios de terceros. 
-        \nNo asumimos responsabilidad por su contenido.
-        \nAl hacer clic en un anuncio, el usuario puede ser redirigido a sitios web o aplicaciones externos, 
-        \nde cuyo contenido no tenemos control.
-        \nLa publicidad mostrada puede personalizarse en función de datos de uso anónimos o seudónimos, 
-        \na condición de que el usuario haya dado su consentimiento previo.
-        \n
-        \n4. Responsabilidad
-        \nSolo somos responsables en casos de dolo o negligencia grave. No nos hacemos responsables de daños causados por publicidad o contenido externo.
-        \n
-        \n5. Política de privacidad
-        \nLos datos se procesan de acuerdo con nuestra política de privacidad.
-        \na) Datos recogidos
-        \nInformación del dispositivo (modelo, versión del sistema, identificadores únicos)
-        \nDirección IP e información general de localización
-        \nComportamiento de uso en la aplicación (páginas vistas, interacciones con anuncios)
-        \n
-        \nb) Finalidad del tratamiento
-        \nMostrar publicidad y medir su rendimiento
-        \nMejorar la experiencia del usuario
-        \nAnálisis de errores y seguridad de la aplicación
-        \n
-        \nc) Terceros y publicidad
-        \nUtilizamos los siguientes proveedores de publicidad, que pueden procesar datos en nuestro nombre:
-        \n
-        \nGoogle AdMob (Google Ireland Limited)
-        \nPolítica de privacidad: https://policies.google.com/privacy
-        \n
-        \nEste proveedor puede utilizar cookies u otras tecnologías similares para mostrar publicidad personalizada.
-        \nEn la UE, solicitamos el consentimiento del usuario previamente mediante un cuadro de diálogo.
-        \n
-        \nd) Base jurídica
-        \nConsentimiento (Art. 6 párr. 1 lit. a RGPD) para publicidad personalizada
-        \nInterés legítimo (Art. 6 párr. 1 lit. f RGPD) para publicidad no personalizada y seguridad de la aplicación
-        \n
-        \n6. Retirada y opt-out
-        \nEl usuario puede retirar su consentimiento en cualquier momento en los ajustes de la aplicación.
-        \nTras la retirada, el usuario no tendrá más acceso a la aplicación.
-        \nLa publicidad no personalizada puede seguir mostrándose.
-        \n
-        \n7. Periodo de conservación
-        \nLos datos se conservarán únicamente mientras sea necesario para cumplir con los fines mencionados.
-        \n
-        \n8. Derechos del usuario
-        \nEl usuario tiene derecho de acceso, rectificación, supresión, limitación del tratamiento y portabilidad de los datos.
-        \nLas solicitudes deben enviarse al siguiente correo electrónico: [MAIL]
-        \n
-        \n9. Cambios
-        \nNos reservamos el derecho de adaptar esta política de privacidad a los cambios legales o técnicos de la aplicación.
-        \nPodemos cambiar la aplicación y los TCG en cualquier momento. 
-        \nLos cambios se anunciarán en consecuencia.
-        \n
-        \n10. Ley aplicable
-        \nSe aplica la legislación alemana, salvo derechos obligatorios de los consumidores del país del usuario.
-        \n
-        \n11. Consentimiento
-        \nAl aceptar los TCG, el usuario declara haberlos leído y aceptado. 
-        \nEl uso no es posible sin consentimiento.
-        `,
-      IT: `Condizioni generali di utilizzo (CGU)
-        \n
-        \n1. Ambito di applicazione
-        \nLe presenti CGU regolano l'utilizzo dell'app. 
-        \nUtilizzando l'app, l'utente accetta queste condizioni.
-        \n
-        \n2. Uso dell'app
-        \nL'app è fornita gratuitamente e contiene pubblicità. 
-        \nL'uso è consentito solo accettando le CGU.
-        \nL'app può essere utilizzata solo nel rispetto della legge e delle presenti CGU.
-        \nÈ vietato eludere misure di protezione tecniche o manipolare l'app.
-        \nI contenuti dell'app non possono essere copiati o distribuiti senza il nostro consenso.
-        \n
-        \n3. Pubblicità
-        \nVengono mostrati annunci di terzi. 
-        \nNon ci assumiamo alcuna responsabilità per i loro contenuti.
-        \nCliccando su un annuncio, l'utente può essere reindirizzato a siti web o app esterni, 
-        \ndi cui non abbiamo alcun controllo.
-        \nLa pubblicità mostrata può essere personalizzata sulla base di dati di utilizzo anonimi o pseudonimi, 
-        \nse l'utente ha precedentemente dato il proprio consenso.
-        \n
-        \n4. Responsabilità
-        \nSiamo responsabili solo in caso di dolo o colpa grave. Non ci assumiamo responsabilità per danni causati da pubblicità o contenuti esterni.
-        \n
-        \n5. Informativa sulla privacy
-        \nI dati vengono trattati in conformità alla nostra informativa sulla privacy.
-        \na) Dati raccolti
-        \nInformazioni sul dispositivo (modello, versione del sistema operativo, identificatori univoci)
-        \nIndirizzo IP e informazioni generali sulla posizione
-        \nComportamento di utilizzo nell'app (pagine visitate, interazioni pubblicitarie)
-        \n
-        \nb) Finalità del trattamento
-        \nVisualizzazione della pubblicità e misurazione delle sue prestazioni
-        \nMiglioramento dell'esperienza utente
-        \nAnalisi degli errori e sicurezza dell'app
-        \n
-        \nc) Terze parti e pubblicità
-        \nUtilizziamo i seguenti fornitori di pubblicità, che possono trattare dati per nostro conto:
-        \n
-        \nGoogle AdMob (Google Ireland Limited)
-        \nInformativa sulla privacy: https://policies.google.com/privacy
-        \n
-        \nQuesto fornitore può utilizzare cookie o tecnologie simili per mostrare pubblicità personalizzata.
-        \nNell'UE, raccogliamo preventivamente il consenso dell'utente tramite una finestra di dialogo.
-        \n
-        \nd) Base giuridica
-        \nConsenso (art. 6, par. 1, lett. a GDPR) per la pubblicità personalizzata
-        \nInteresse legittimo (art. 6, par. 1, lett. f GDPR) per la pubblicità non personalizzata e la sicurezza dell'app
-        \n
-        \n6. Revoca e opt-out
-        \nL'utente può revocare il proprio consenso in qualsiasi momento nelle impostazioni dell'app.
-        \nDopo la revoca, l'utente non avrà più accesso all'app.
-        \nLa pubblicità non personalizzata può comunque essere visualizzata.
-        \n
-        \n7. Periodo di conservazione
-        \nI dati vengono conservati solo per il tempo necessario a raggiungere le finalità indicate.
-        \n
-        \n8. Diritti dell'utente
-        \nL'utente ha diritto di accesso, rettifica, cancellazione, limitazione del trattamento e portabilità dei dati.
-        \nLe richieste devono essere inviate al seguente indirizzo email: [MAIL]
-        \n
-        \n9. Modifiche
-        \nCi riserviamo il diritto di adeguare la presente informativa sulla privacy in base a modifiche legali o tecniche dell'app.
-        \nPossiamo modificare l'app e i Termini e Condizioni (T&C) in qualsiasi momento.
-        \nLe modifiche saranno comunicate di conseguenza.
-        \n
-        \n11. Legge applicabile
-        \nSi applica la legge tedesca, salvo i diritti dei consumatori obbligatori del paese dell'utente.
-        \n
-        \n12. Consenso
-        \nAccettando i T&C, l'utente dichiara di averli letti e accettati.
-        \nL'uso non è possibile senza consenso.
-        `
-    };
+    <div id="language-container">
+        <label id="language-label" for="language-select">Language</label><br>
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+            <option value="it">Italiano</option>
+        </select>
+    </div>
 
-    function setLanguage(lang) {
-      // Text mit Zeilenumbrüchen
-      const textWithBreaks = translations[lang].replace(/\n/g, '<br>');
-      document.getElementById('text').innerHTML = textWithBreaks;
+    <div id="container">
+        <div id="content"></div>
+    </div>
 
-      // Überschrift
-      document.querySelector('h1').innerText = lang === 'EN' ? 'Privacy Policy' :
-                                                lang === 'FR' ? 'Politique de confidentialité' :
-                                                lang === 'ES' ? 'Política de privacidad' :
-                                                lang === 'IT' ? 'Informativa sulla privacy' :
-                                                'Datenschutzerklärung';
+    <script>
+        const languageLabel = {
+            en: "Language",
+            de: "Sprache",
+            fr: "Langue",
+            es: "Idioma",
+            it: "Lingua"
+        };
 
-      // Aktive Buttons
-      document.querySelectorAll('#sidebar button').forEach(btn => {
-        btn.classList.remove('active');
-      });
-      const activeBtn = document.getElementById('btn-' + lang);
-      if(activeBtn) activeBtn.classList.add('active');
-    }
+        const translations = {
+            en: `
+<h2 style="text-align:center;"><strong>Sprangerworks Privacy Policy</strong></h2>
+<p style="text-align:center;">Effective Date: October 7, 2025</p>
 
-    // Direkt beim Laden auf Englisch setzen
-    window.onload = () => {
-      setLanguage('EN');
-    };
-  </script>
+<p>Thank you for trusting Sprangerworks!</p>
+
+<strong>Contents</strong>
+<ul>
+<li>How we collect personal data and why</li>
+<li>How we use personal data</li>
+<li>Your rights and options regarding your personal data</li>
+</ul>
+
+<h3><strong>1. Scope</strong></h3>
+<p>This Privacy Policy applies to all Sprangerworks games, stores, websites, and related services (collectively, the “Service”). We may update this Policy by publishing a new version on sprangerworks.com. In case of significant changes, we will inform you as required by law, including through notifications within the Service before they take effect. Continued use of the Service after the effective date constitutes acceptance of the updated version. By using the app, you agree to the following terms.</p>
+
+<h3><strong>2. Data Collected</strong></h3>
+<p>The categories of data collected depend on the Service used and the applicable law.</p>
+
+<p><em>a) Data collected automatically</em></p>
+<ul>
+<li>Account and gameplay progress data, including an internal account ID</li>
+<li>Device information: name, operating system version, browser type, language, Internet provider, and mobile operator</li>
+<li>Usage data: gameplay activity, interactions, and Service usage statistics</li>
+<li>Cookies and similar technologies (see section 5)</li>
+</ul>
+
+<h3><strong>3. Purpose of Data Processing</strong></h3>
+<p>We process your data for business and operational purposes, including:</p>
+
+<p><em>Functional Use</em></p>
+<ul>
+<li>Create and manage accounts</li>
+<li>Enable access to the Service</li>
+<li>Send communications related to the Service (e.g., support responses)</li>
+</ul>
+
+<p><em>Service Analysis and Development</em></p>
+<ul>
+<li>Maintain and improve user profiles</li>
+<li>Develop and optimize the Service and gaming experience</li>
+<li>Provide social features and community interactions</li>
+<li>Respond to comments and support requests</li>
+<li>Facilitate communication between users</li>
+</ul>
+
+<p><em>Advertising and Personalization</em></p>
+<p>With your consent, we may collect and use device identifiers (e.g., IDFA, GAID, IP address, device ID, vendor ID, OS version, model, country, client version) to display and personalize in-game advertisements. When required by privacy laws such as the GDPR, we will always request your consent before processing such identifiers for targeted or behavioral advertising.</p>
+<p>When consent has been granted, data may be shared with advertising partners (such as Google AdMob) to display relevant ads, prevent duplication, and measure effectiveness. Users can manage consent in game settings, reset advertising identifiers, or limit ad tracking (Android: “Opt out of interest-based ads”; iOS: “Limit Ad Tracking”). Partners manage ad networks, facilitate auctions, and may process identifiers to detect fraud based on their legitimate interest.</p>
+
+<h3><strong>4. Third Parties and Data Disclosure</strong></h3>
+<p>Your data may be accessible to third parties only in the following cases:</p>
+
+<p><em>a) Service Providers</em></p>
+<ul>
+<li>Host and store data</li>
+<li>Provide player support</li>
+<li>Handle advertising and analytics</li>
+<li>Process payments</li>
+<li>Detect and prevent fraud</li>
+</ul>
+
+<p><em>b) Other Companies and Public Authorities</em></p>
+<ul>
+<li>Verify payments (e.g., via PayPal or similar services)</li>
+<li>Prevent or investigate fraud</li>
+<li>Comply with legal obligations</li>
+<li>Protect the rights, safety, and property of Sprangerworks, our users, or the public</li>
+</ul>
+
+<p><em>c) Partners and Integrations</em></p>
+<p>The Service may include partner features such as social tools, APIs / SDKs, and in-game advertising. These partners may access data (IP, mobile identifiers, visited pages, location, access time) and operate under their own privacy policies. Advertising partners may use this data for interest-based advertising on third-party services. To limit data sharing, see the section “Your Rights and Options.”</p>
+
+<h3><strong>5. Cookies and Similar Technologies</strong></h3>
+<p>We and our partners use cookies, pixels, and similar technologies to:</p>
+<ul>
+<li>Provide and personalize the Service</li>
+<li>Analyze usage and performance</li>
+<li>Display and measure ads</li>
+<li>Prevent fraud</li>
+</ul>
+
+<p>Cookies allow us and our partners to store preferences, track activities, and link information across devices and sessions.</p>
+
+<p>We may also use cross-device linking (“device graph”) to:</p>
+<ul>
+<li>Detect and prevent fraud</li>
+<li>Improve continuity across devices</li>
+<li>Perform analytics, personalization, and attribution</li>
+<li>Limit repeated ads across multiple devices</li>
+<li>Deliver personalized ads based on multi-device usage</li>
+</ul>
+
+<p>Some of our sites use third-party analytics, telemetry, and marketing providers operating under their own privacy policies.</p>
+
+<h3><strong>6. Your Rights and Options</strong></h3>
+
+<p><em>a) Push Notifications</em></p>
+<p>We may send you push notifications through our mobile apps. You can disable them at any time in your device settings.</p>
+
+<p><em>b) Access to Your Data</em></p>
+<p>Upon request, we will provide you with a copy of your personal data by mail or other secure means.</p>
+
+<p><em>c) Other Rights</em></p>
+<ul>
+<li>Correct inaccurate data</li>
+<li>Request deletion of your data</li>
+<li>Object to or limit the processing and sharing of your data</li>
+<li>Withdraw consent at any time</li>
+</ul>
+
+<p>To exercise these rights, use the contact details in section 10. We will respond promptly and fairly to all valid requests.</p>
+
+<h3><strong>7. Children’s Privacy</strong></h3>
+<p>Protecting minors is essential to Sprangerworks. Our Services are not intended for children under 13 years old (or the minimum age required by local law). We do not knowingly collect personal data from children. If we become aware of such data, we will delete it immediately.</p>
+
+<h3><strong>8. International Data Transfers</strong></h3>
+<p>As Sprangerworks operates globally, your data may be transferred and processed outside your country of residence. Since regulations vary, we adopt appropriate legal safeguards, such as EU Standard Contractual Clauses and other lawful mechanisms, to protect your data in accordance with applicable laws.</p>
+
+<h3><strong>9. Service Availability for Non-EU Residents</strong></h3>
+
+<p><em>a) Availability</em></p>
+<p>Currently, Sprangerworks provides its Services exclusively within the European Union. Due to limited resources, we are not yet able to implement additional data protection requirements required in some non-EU jurisdictions.</p>
+
+<p><em>b) Restricted Regions</em></p>
+<p>Our Services are not available in the following regions due to specific privacy regulations:</p>
+<ul>
+<li>United States (including state laws CCPA / CPRA and COPPA)</li>
+<li>South Korea (PIPA)</li>
+<li>Turkey (KVKK)</li>
+<li>China (PIPL)</li>
+<li>Brazil (LGPD)</li>
+<li>Japan (APPI)</li>
+<li>Canada (PIPEDA and provincial laws)</li>
+<li>United Kingdom (UK GDPR)</li>
+</ul>
+
+<p>As a result, Sprangerworks does not maintain any market presence or actively offer its Services in these jurisdictions.</p>
+
+<h3><strong>10. Contact Information</strong></h3>
+<p>For questions about data protection or to exercise your rights, please contact:</p>
+
+<p><strong>Data Controller:</strong> Johannes Spranger<br>
+Röderweg 36 B, 64625 Bensheim, Germany<br>
+Subject: <em>Privacy</em><br>
+Email: <a href="mailto:sprangerworks@gmail.com" style="color:blue;">sprangerworks@gmail.com</a></p>
+
+<p>Please note that we can only properly process requests if the subject line “Privacy” is used.</p>
+
+`,
+            de: `
+<h2 style="text-align:center;"><strong>Datenschutzerklärung von Sprangerworks</strong></h2>
+<p style="text-align:center;">Gültig ab: 7. Oktober 2025</p>
+
+<p>Danke für dein Vertrauen in Sprangerworks!</p>
+
+<strong>Inhalt</strong>
+<ul>
+<li>Wie wir personenbezogene Daten erheben und warum</li>
+<li>Wie wir personenbezogene Daten verwenden</li>
+<li>Deine Rechte und Wahlmöglichkeiten in Bezug auf deine Daten</li>
+</ul>
+
+<h3><strong>1. Geltungsbereich</strong></h3>
+<p>Diese Datenschutzerklärung gilt für alle Spiele, Shops, Websites und damit verbundenen Dienste von Sprangerworks (zusammen der „Dienst“). Wir können diese Erklärung aktualisieren, indem wir eine neue Version auf sprangerworks.com veröffentlichen. Bei wesentlichen Änderungen informieren wir dich, wie gesetzlich vorgeschrieben, auch über Hinweise im Dienst, bevor sie in Kraft treten. Die fortgesetzte Nutzung des Dienstes nach dem Wirksamkeitsdatum bedeutet die Zustimmung zur aktualisierten Version. Durch die Nutzung der App akzeptierst du die folgenden Bedingungen.</p>
+
+<h3><strong>2. Erhobene Daten</strong></h3>
+<p>Die Kategorien der erhobenen Daten hängen vom genutzten Dienst und der geltenden Rechtslage ab.</p>
+
+<p><em>a) Automatisch erhobene Daten</em></p>
+<ul>
+<li>Kontodaten und Spielfortschritte, einschließlich einer internen Konto-ID</li>
+<li>Geräteinformationen: Name, Betriebssystemversion, Browsertyp, Sprache, Internetanbieter und Mobilfunkanbieter</li>
+<li>Nutzungsdaten: Spielaktivität, Interaktionen und Nutzungsstatistiken des Dienstes</li>
+<li>Cookies und ähnliche Technologien (siehe Abschnitt 5)</li>
+</ul>
+
+<h3><strong>3. Zwecke der Datenverarbeitung</strong></h3>
+<p>Wir verarbeiten deine Daten zu geschäftlichen und betrieblichen Zwecken, darunter:</p>
+
+<p><em>Funktionale Nutzung</em></p>
+<ul>
+<li>Erstellung und Verwaltung von Konten</li>
+<li>Ermöglichung des Zugriffs auf den Dienst</li>
+<li>Versand von dienstbezogenen Mitteilungen (z. B. Support-Antworten)</li>
+</ul>
+
+<p><em>Analyse und Weiterentwicklung des Dienstes</em></p>
+<ul>
+<li>Pflege und Verbesserung von Benutzerprofilen</li>
+<li>Entwicklung und Optimierung des Dienstes und der Spielerfahrung</li>
+<li>Bereitstellung sozialer Funktionen und Community-Interaktionen</li>
+<li>Beantwortung von Feedback und Supportanfragen</li>
+<li>Förderung der Kommunikation zwischen Nutzern</li>
+</ul>
+
+<p><em>Werbung und Personalisierung</em></p>
+<p>Mit deiner Zustimmung können wir Gerätekennungen (z. B. IDFA, GAID, IP-Adresse, Geräte-ID, Anbieter-ID, Betriebssystemversion, Modell, Land, Client-Version) erfassen und verwenden, um Werbeanzeigen im Spiel anzuzeigen und zu personalisieren. Wenn es gesetzlich erforderlich ist (z. B. nach DSGVO), holen wir vor einer solchen Verarbeitung stets deine Einwilligung ein.</p>
+
+<p>Bei erteilter Zustimmung können Daten an Werbepartner (z. B. Google AdMob) weitergegeben werden, um relevante Anzeigen zu zeigen, Duplikate zu vermeiden und die Wirksamkeit zu messen. Nutzer können ihre Zustimmung in den Spieleinstellungen verwalten, Werbe-IDs zurücksetzen oder personalisierte Werbung deaktivieren (Android: „Interessenbasierte Werbung deaktivieren“, iOS: „Ad-Tracking beschränken“). Partner betreiben Werbenetzwerke, führen Auktionen durch und dürfen Identifikatoren im berechtigten Interesse zur Betrugserkennung verarbeiten.</p>
+
+<h3><strong>4. Dritte und Datenweitergabe</strong></h3>
+<p>Deine Daten können Dritten nur in den folgenden Fällen zugänglich gemacht werden:</p>
+
+<p><em>a) Dienstleister</em></p>
+<ul>
+<li>Hosting und Datenspeicherung</li>
+<li>Spielersupport</li>
+<li>Werbung und Analyse</li>
+<li>Zahlungsabwicklung</li>
+<li>Betrugserkennung und -prävention</li>
+</ul>
+
+<p><em>b) Andere Unternehmen und Behörden</em></p>
+<ul>
+<li>Zahlungen verifizieren (z. B. über PayPal oder ähnliche Dienste)</li>
+<li>Betrug verhindern oder untersuchen</li>
+<li>Gesetzliche Verpflichtungen erfüllen</li>
+<li>Rechte, Sicherheit und Eigentum von Sprangerworks, unseren Nutzern oder der Öffentlichkeit schützen</li>
+</ul>
+
+<p><em>c) Partner und Integrationen</em></p>
+<p>Der Dienst kann Partnerfunktionen enthalten, wie soziale Tools, APIs / SDKs oder In-Game-Werbung. Diese Partner können auf Daten zugreifen (IP, mobile Kennungen, besuchte Seiten, Standort, Zugriffszeit) und handeln gemäß ihren eigenen Datenschutzrichtlinien. Werbepartner dürfen diese Daten für interessenbasierte Werbung auf Drittplattformen verwenden. Zur Einschränkung der Datenweitergabe siehe Abschnitt „Deine Rechte und Optionen“.</p>
+
+<h3><strong>5. Cookies und ähnliche Technologien</strong></h3>
+<p>Wir und unsere Partner verwenden Cookies, Pixel und ähnliche Technologien, um:</p>
+<ul>
+<li>den Dienst bereitzustellen und zu personalisieren</li>
+<li>Nutzung und Leistung zu analysieren</li>
+<li>Werbung anzuzeigen und deren Wirkung zu messen</li>
+<li>Betrug zu verhindern</li>
+</ul>
+
+<p>Cookies ermöglichen es uns und unseren Partnern, Präferenzen zu speichern, Aktivitäten zu verfolgen und Informationen zwischen Geräten und Sitzungen zu verknüpfen.</p>
+
+<p>Wir können auch geräteübergreifende Verknüpfungen („Device Graph“) nutzen, um:</p>
+<ul>
+<li>Betrug zu erkennen und zu verhindern</li>
+<li>Kontinuität zwischen Geräten zu verbessern</li>
+<li>Analyse, Personalisierung und Attribution durchzuführen</li>
+<li>Wiederholte Werbung auf mehreren Geräten zu vermeiden</li>
+<li>Personalisierte Werbung über mehrere Geräte hinweg bereitzustellen</li>
+</ul>
+
+<p>Einige unserer Websites verwenden Drittanbieter für Analyse, Telemetrie und Marketing, die ihre eigenen Datenschutzrichtlinien haben.</p>
+
+<h3><strong>6. Deine Rechte und Optionen</strong></h3>
+
+<p><em>a) Push-Benachrichtigungen</em></p>
+<p>Wir können dir Push-Benachrichtigungen über unsere mobilen Apps senden. Du kannst diese jederzeit in den Geräteeinstellungen deaktivieren.</p>
+
+<p><em>b) Zugriff auf deine Daten</em></p>
+<p>Auf Anfrage stellen wir dir eine Kopie deiner personenbezogenen Daten per Post oder auf sicherem Weg zur Verfügung.</p>
+
+<p><em>c) Weitere Rechte</em></p>
+<ul>
+<li>unrichtige Daten berichtigen</li>
+<li>Löschung deiner Daten verlangen</li>
+<li>der Verarbeitung oder Weitergabe widersprechen oder diese einschränken</li>
+<li>Einwilligung jederzeit widerrufen</li>
+</ul>
+
+<p>Zur Ausübung dieser Rechte nutze die Kontaktdaten in Abschnitt 10. Wir beantworten alle berechtigten Anfragen zeitnah und fair.</p>
+
+<h3><strong>7. Datenschutz von Minderjährigen</strong></h3>
+<p>Der Schutz von Minderjährigen ist für Sprangerworks von höchster Bedeutung. Unsere Dienste richten sich nicht an Kinder unter 13 Jahren (oder dem gesetzlich vorgeschriebenen Mindestalter). Wir erfassen wissentlich keine personenbezogenen Daten von Kindern. Sollten solche Daten versehentlich erfasst werden, löschen wir sie umgehend.</p>
+
+<h3><strong>8. Internationale Datenübermittlungen</strong></h3>
+<p>Da Sprangerworks weltweit tätig ist, können deine Daten außerhalb deines Wohnsitzlandes übertragen und verarbeitet werden. Da die Datenschutzgesetze variieren, setzen wir angemessene rechtliche Schutzmaßnahmen wie die EU-Standardvertragsklauseln und andere zulässige Mechanismen ein, um deine Daten zu schützen.</p>
+
+<h3><strong>9. Verfügbarkeit des Dienstes für Nicht-EU-Bewohner</strong></h3>
+
+<p><em>a) Verfügbarkeit</em></p>
+<p>Sprangerworks bietet seine Dienste derzeit ausschließlich innerhalb der Europäischen Union an. Aufgrund begrenzter Ressourcen können wir zusätzliche Datenschutzanforderungen bestimmter Nicht-EU-Länder noch nicht umsetzen.</p>
+
+<p><em>b) Eingeschränkte Regionen</em></p>
+<p>Unsere Dienste sind in folgenden Regionen aufgrund spezifischer Datenschutzgesetze nicht verfügbar:</p>
+<ul>
+<li>USA (einschließlich CCPA / CPRA und COPPA)</li>
+<li>Südkorea (PIPA)</li>
+<li>Türkei (KVKK)</li>
+<li>China (PIPL)</li>
+<li>Brasilien (LGPD)</li>
+<li>Japan (APPI)</li>
+<li>Kanada (PIPEDA und Provinzgesetze)</li>
+<li>Vereinigtes Königreich (UK GDPR)</li>
+</ul>
+
+<p>Sprangerworks hat daher keine Marktpräsenz und bietet seine Dienste in diesen Regionen nicht aktiv an.</p>
+
+<h3><strong>10. Kontaktinformationen</strong></h3>
+<p>Bei Fragen zum Datenschutz oder zur Ausübung deiner Rechte kontaktiere uns bitte:</p>
+
+<p><strong>Verantwortlicher:</strong> Johannes Spranger<br>
+Röderweg 36 B, 64625 Bensheim, Deutschland<br>
+Betreff: <em>Privacy</em><br>
+E-Mail: <a href="mailto:sprangerworks@gmail.com" style="color:blue;">sprangerworks@gmail.com</a></p>
+
+<p>Bitte beachte, dass wir Anfragen nur korrekt bearbeiten können, wenn die Betreffzeile „Privacy“ verwendet wird.</p>
+
+`,
+            fr: `
+<h2 style="text-align:center;"><strong>Politique de confidentialité de Sprangerworks</strong></h2>
+<p style="text-align:center;">Date d'entrée en vigueur : 7 octobre 2025</p>
+
+<p>Merci de la confiance accordée à Sprangerworks!</p>
+
+<strong>Contenu</strong>
+<ul>
+<li>Comment nous recueillons les données personnelles et pourquoi</li>
+<li>Comment nous utilisons les données personnelles</li>
+<li>Vos droits et options concernant vos données personnelles</li>
+</ul>
+
+<h3><strong>1. Champ d'application</strong></h3>
+<p>La présente Politique de confidentialité s'applique à tous les jeux, boutiques, sites web et services connexes de Sprangerworks (collectivement, le « Service »). Nous pouvons mettre à jour cette Politique en publiant une nouvelle version sur sprangerworks.com. En cas de modifications importantes, nous vous informerons conformément à la loi, y compris par des notifications dans le Service avant leur entrée en vigueur. La poursuite de l'utilisation du Service après la date d'entrée en vigueur implique l'acceptation de la version mise à jour. En utilisant l'application, l'utilisateur accepte les termes suivants.</p>
+
+<h3><strong>2. Données collectées</strong></h3>
+<p>Les catégories de données collectées dépendent du Service utilisé et de la législation applicable.</p>
+
+<p><em>a) Données collectées automatiquement</em></p>
+<ul>
+<li>Données de compte et progression de jeu, y compris un identifiant interne de compte</li>
+<li>Informations sur l'appareil : nom, version du système d'exploitation, type de navigateur, langue, fournisseur d'accès Internet et opérateur mobile</li>
+<li>Données d'utilisation : activité de jeu, interactions et statistiques d'utilisation du Service</li>
+<li>Cookies et technologies similaires (voir section 5)</li>
+</ul>
+
+<h3><strong>3. Finalités du traitement des données</strong></h3>
+<p>Nous traitons vos données à des fins commerciales et opérationnelles, notamment :</p>
+
+<p><em>Usage fonctionnel</em></p>
+<ul>
+<li>Créer et gérer des comptes</li>
+<li>Permettre l'accès au Service</li>
+<li>Envoyer des communications liées au Service (par ex., réponses du support)</li>
+</ul>
+
+<p><em>Analyse et développement du Service</em></p>
+<ul>
+<li>Maintenir et améliorer les profils utilisateur</li>
+<li>Développer et optimiser le Service et l'expérience de jeu</li>
+<li>Fournir des fonctionnalités sociales et des interactions communautaires</li>
+<li>Répondre aux commentaires et demandes d'assistance</li>
+<li>Faciliter la communication entre utilisateurs</li>
+</ul>
+
+<p><em>Publicité et personnalisation</em></p>
+<p>Avec votre consentement, nous pouvons collecter et utiliser des identifiants d'appareil (par ex. IDFA, GAID, adresse IP, ID de l'appareil, identifiant du fournisseur, version du système d'exploitation, modèle, pays, version du client) pour afficher et personnaliser les publicités dans le jeu. Lorsque les lois sur la protection des données l'exigent, comme le RGPD, nous demandons toujours votre consentement avant de traiter ces identifiants à des fins de publicité ciblée ou comportementale.</p>
+
+<p>Lorsque le consentement a été donné, les données peuvent être partagées avec des partenaires publicitaires (par ex. Google AdMob) pour afficher des annonces pertinentes, éviter les doublons et mesurer l'efficacité. Les utilisateurs peuvent gérer le consentement dans les paramètres du jeu, réinitialiser les identifiants publicitaires ou limiter le suivi publicitaire (Android : « Désactiver les annonces basées sur les centres d'intérêt » ; iOS : « Limiter le suivi des publicités »). Les partenaires gèrent des réseaux publicitaires, facilitent les enchères et peuvent traiter des identifiants pour détecter les fraudes sur la base de leur intérêt légitime.</p>
+
+<h3><strong>4. Tiers et divulgation des données</strong></h3>
+<p>Vos données peuvent être accessibles à des tiers uniquement dans les cas suivants :</p>
+
+<p><em>a) Fournisseurs de services</em></p>
+<ul>
+<li>Hébergement et stockage</li>
+<li>Support aux joueurs</li>
+<li>Publicité et analyses</li>
+<li>Traitement des paiements</li>
+<li>Détection et prévention des fraudes</li>
+</ul>
+
+<p><em>b) Autres sociétés et autorités publiques</em></p>
+<ul>
+<li>Vérifier les paiements (par ex. via PayPal ou services similaires)</li>
+<li>Prévenir ou enquêter sur des fraudes</li>
+<li>Respecter des obligations légales</li>
+<li>Protéger les droits, la sécurité et les biens de Sprangerworks, de nos utilisateurs ou du public</li>
+</ul>
+
+<p><em>c) Partenaires et intégrations</em></p>
+<p>Le Service peut inclure des fonctionnalités de partenaires, telles que des outils sociaux, API / SDK et publicités dans le jeu. Ces partenaires peuvent accéder à des données (IP, identifiants mobiles, pages visitées, position, heure d'accès) et opèrent selon leurs propres politiques de confidentialité. Les partenaires publicitaires peuvent utiliser ces données pour fournir de la publicité ciblée sur des services tiers. Pour limiter le partage des données, consultez la section « Vos droits et options ».</p>
+
+<h3><strong>5. Cookies et technologies similaires</strong></h3>
+<p>Nous et nos partenaires utilisons des cookies, pixels et technologies similaires pour :</p>
+<ul>
+<li>Fournir et personnaliser le Service</li>
+<li>Analyser l'utilisation et les performances</li>
+<li>Afficher et mesurer les publicités</li>
+<li>Prévenir les fraudes</li>
+</ul>
+
+<p>Les cookies permettent à nous et à nos partenaires de stocker des préférences, suivre l'activité et relier des informations entre appareils et sessions.</p>
+
+<p>Nous pouvons également utiliser des connexions entre appareils (« device graph ») pour :</p>
+<ul>
+<li>Détecter et prévenir les fraudes</li>
+<li>Améliorer la continuité entre appareils</li>
+<li>Effectuer des analyses, personnalisation et attribution</li>
+<li>Limiter la répétition des annonces sur plusieurs appareils</li>
+<li>Fournir des publicités personnalisées basées sur l'utilisation multi-appareils</li>
+</ul>
+
+<p>Certains de nos sites utilisent des prestataires tiers d'analyse, de télémétrie et de marketing, qui opèrent selon leurs propres politiques de confidentialité.</p>
+
+<h3><strong>6. Vos droits et options</strong></h3>
+
+<p><em>a) Notifications push</em></p>
+<p>Nous pouvons vous envoyer des notifications push via nos applications mobiles. Vous pouvez les désactiver à tout moment dans les paramètres de votre appareil.</p>
+
+<p><em>b) Accès à vos données</em></p>
+<p>Sur demande, nous vous fournirons une copie de vos données personnelles par courrier ou autre moyen sécurisé.</p>
+
+<p><em>c) Autres droits</em></p>
+<ul>
+<li>Corriger des données inexactes</li>
+<li>Demander la suppression de vos données</li>
+<li>Vous opposer ou limiter le traitement et le partage de vos données</li>
+<li>Retirer votre consentement à tout moment</li>
+</ul>
+
+<p>Pour exercer ces droits, utilisez les coordonnées de la section 10. Nous répondrons de manière rapide et équitable à toutes les demandes valides.</p>
+
+<h3><strong>7. Confidentialité des mineurs</strong></h3>
+<p>La protection des mineurs est essentielle pour Sprangerworks. Nos Services ne sont pas destinés aux mineurs de moins de 13 ans (ou à l'âge minimum requis par la loi locale). Nous ne collectons pas sciemment de données personnelles auprès d'enfants. Si nous prenons connaissance de telles données, nous les supprimerons immédiatement.</p>
+
+<h3><strong>8. Transferts internationaux de données</strong></h3>
+<p>Étant donné que Sprangerworks opère à l'échelle mondiale, vos données peuvent être transférées et traitées en dehors de votre pays de résidence. Comme les réglementations varient, nous adoptons des garanties légales appropriées, telles que les clauses contractuelles types de l'UE et d'autres mécanismes licites, pour protéger vos données conformément aux lois en vigueur.</p>
+
+<h3><strong>9. Disponibilité du Service pour les non - résidents de l'UE</strong></h3>
+
+<p><em>a) Disponibilité</em></p>
+<p>Actuellement, Sprangerworks propose ses Services exclusivement au sein de l'Union européenne. En raison de ressources limitées, nous ne sommes pas encore en mesure de mettre en œuvre les exigences supplémentaires de protection des données requises dans certaines juridictions hors UE.</p>
+
+<p><em>b) Régions restreintes</em></p>
+<p>Nos Services ne sont pas disponibles dans les régions suivantes en raison de réglementations spécifiques en matière de confidentialité :</p>
+<ul>
+<li>États-Unis (y compris les lois d'État CCPA/CPRA et COPPA)</li>
+<li>Corée du Sud (PIPA)</li>
+<li>Turquie (KVKK)</li>
+<li>Chine (PIPL)</li>
+<li>Brésil (LGPD)</li>
+<li>Japon (APPI)</li>
+<li>Canada (PIPEDA et lois provinciales)</li>
+<li>Royaume-Uni (UK GDPR)</li>
+</ul>
+
+<p>En conséquence, Sprangerworks ne maintient pas de présence commerciale ni n'offre activement ses Services dans ces juridictions.</p>
+
+<h3><strong>10. Coordonnées</strong></h3>
+<p>Pour des questions relatives à la protection des données ou pour exercer vos droits, contactez :</p>
+
+<p><strong>Responsable du traitement :</strong> Johannes Spranger<br>
+Röderweg 36 B, 64625 Bensheim, Germany<br>
+Objet : <em>Privacy</em><br>
+Courriel : <a href="mailto:sprangerworks@gmail.com" style="color:blue;">sprangerworks@gmail.com</a></p>
+
+<p>Veuillez noter que nous ne pouvons traiter correctement les demandes que si la ligne d'objet « Privacy » est utilisée.</p>
+
+`,
+            es: `
+<h2 style="text-align:center;"><strong>Política de Privacidad de Sprangerworks</strong></h2>
+<p style="text-align:center;">Fecha de entrada en vigor: 7 de octubre de 2025</p>
+
+<p>¡Gracias por la confianza depositada en Sprangerworks!</p>
+
+<strong>Contenido</strong>
+<ul>
+<li>Cómo recopilamos los datos personales y por qué</li>
+<li>Cómo utilizamos los datos personales</li>
+<li>Tus derechos y opciones con respecto a tus datos personales</li>
+</ul>
+
+<h3><strong>1. Ámbito de aplicación</strong></h3>
+<p>La presente Política de Privacidad se aplica a todos los juegos, tiendas, sitios web y servicios relacionados de Sprangerworks (colectivamente, el “Servicio”). Podemos actualizar esta Política publicando una nueva versión en sprangerworks.com. En caso de cambios significativos, te informaremos según lo exija la ley, incluso mediante notificaciones en el Servicio antes de su entrada en vigor. El uso continuado del Servicio después de la fecha de entrada en vigor implica la aceptación de la versión actualizada. Al utilizar la aplicación, el usuario acepta los siguientes términos.</p>
+
+<h3><strong>2. Datos recopilados</strong></h3>
+<p>Las categorías de datos recopilados dependen del Servicio utilizado y de la legislación aplicable.</p>
+
+<p><em>a) Datos recopilados automáticamente</em></p>
+<ul>
+<li>Datos de cuenta y progreso de juego, incluido un ID interno de cuenta</li>
+<li>Información del dispositivo: nombre, versión del sistema operativo, tipo de navegador, idioma, proveedor de Internet y operador móvil</li>
+<li>Datos de uso: actividad del juego, interacciones y estadísticas de uso del Servicio</li>
+<li>Cookies y tecnologías similares (ver sección 5)</li>
+</ul>
+
+<h3><strong>3. Finalidades del tratamiento de datos</strong></h3>
+<p>Tratamos tus datos con fines comerciales y operativos, entre ellos:</p>
+
+<p><em>Uso funcional</em></p>
+<ul>
+<li>Crear y gestionar cuentas</li>
+<li>Permitir el acceso al Servicio</li>
+<li>Enviar comunicaciones relacionadas con el Servicio (por ejemplo, respuestas del soporte)</li>
+</ul>
+
+<p><em>Análisis y desarrollo del Servicio</em></p>
+<ul>
+<li>Mantener y mejorar los perfiles de usuario</li>
+<li>Desarrollar y optimizar el Servicio y la experiencia de juego</li>
+<li>Proporcionar funciones sociales e interacciones dentro de la comunidad</li>
+<li>Responder a comentarios y solicitudes de soporte</li>
+<li>Facilitar la comunicación entre los usuarios</li>
+</ul>
+
+<p><em>Publicidad y personalización</em></p>
+<p>Con tu consentimiento, podemos recopilar y utilizar identificadores de dispositivos (como IDFA, GAID, dirección IP, ID del dispositivo, identificador del proveedor, versión del sistema operativo, modelo, país, versión del cliente) para mostrar y personalizar anuncios en el juego. Cuando lo exijan las leyes de privacidad, como el RGPD, siempre solicitaremos tu consentimiento antes de procesar dichos identificadores con fines de publicidad dirigida o conductual.</p>
+
+<p>Cuando se haya otorgado el consentimiento, los datos pueden compartirse con socios publicitarios (como Google AdMob) para mostrar anuncios relevantes, evitar duplicaciones y medir su eficacia. Los usuarios pueden gestionar el consentimiento en la configuración del juego, restablecer los identificadores publicitarios o limitar el seguimiento de anuncios (Android: “Desactivar anuncios basados en intereses”; iOS: “Limitar seguimiento de anuncios”). Los socios gestionan redes publicitarias, facilitan subastas y pueden procesar identificadores para detectar fraudes sobre la base de su interés legítimo.</p>
+
+<h3><strong>4. Terceros y divulgación de datos</strong></h3>
+<p>Tus datos pueden ser accesibles a terceros solo en los siguientes casos:</p>
+
+<p><em>a) Proveedores de servicios</em></p>
+<ul>
+<li>Alojamiento y almacenamiento</li>
+<li>Asistencia al jugador</li>
+<li>Publicidad y análisis</li>
+<li>Procesamiento de pagos</li>
+<li>Detección y prevención de fraudes</li>
+</ul>
+
+<p><em>b) Otras empresas y autoridades públicas</em></p>
+<ul>
+<li>Verificar pagos (por ejemplo, a través de PayPal u otros servicios similares)</li>
+<li>Prevenir o investigar fraudes</li>
+<li>Cumplir obligaciones legales</li>
+<li>Proteger los derechos, la seguridad y la propiedad de Sprangerworks, nuestros usuarios o el público</li>
+</ul>
+
+<p><em>c) Socios e integraciones</em></p>
+<p>El Servicio puede incluir funciones de socios, como herramientas sociales, API / SDK y anuncios dentro del juego. Estos socios pueden acceder a datos (IP, identificadores móviles, páginas visitadas, ubicación, hora de acceso) y operan según sus propias políticas de privacidad. Los socios publicitarios pueden utilizar dichos datos para ofrecer publicidad basada en intereses en servicios de terceros. Para limitar el intercambio de datos, consulta la sección “Tus derechos y opciones”.</p>
+
+<h3><strong>5. Cookies y tecnologías similares</strong></h3>
+<p>Nosotros y nuestros socios utilizamos cookies, píxeles y tecnologías similares para:</p>
+<ul>
+<li>Proporcionar y personalizar el Servicio</li>
+<li>Analizar el uso y el rendimiento</li>
+<li>Mostrar y medir anuncios</li>
+<li>Prevenir fraudes</li>
+</ul>
+
+<p>Las cookies permiten a nosotros y a nuestros socios almacenar preferencias, rastrear actividad y vincular información entre dispositivos y sesiones.</p>
+
+<p>También podemos usar vínculos entre dispositivos (“device graph”) para:</p>
+<ul>
+<li>Detectar y prevenir fraudes</li>
+<li>Mejorar la continuidad entre dispositivos</li>
+<li>Realizar análisis, personalización y atribución</li>
+<li>Limitar la repetición de anuncios en varios dispositivos</li>
+<li>Proporcionar publicidad personalizada basada en el uso multiplataforma</li>
+</ul>
+
+<p>Algunos de nuestros sitios utilizan proveedores externos de análisis, telemetría y marketing, que operan según sus propias políticas de privacidad.</p>
+
+<h3><strong>6. Tus derechos y opciones</strong></h3>
+
+<p><em>a) Notificaciones push</em></p>
+<p>Podemos enviarte notificaciones push a través de nuestras aplicaciones móviles. Puedes desactivarlas en cualquier momento desde la configuración del dispositivo.</p>
+
+<p><em>b) Acceso a tus datos</em></p>
+<p>A solicitud, te proporcionaremos una copia de tus datos personales por correo u otro medio seguro.</p>
+
+<p><em>c) Otros derechos</em></p>
+<ul>
+<li>Corregir datos inexactos</li>
+<li>Solicitar la eliminación de tus datos</li>
+<li>Oponerte o limitar el procesamiento y la compartición de tus datos</li>
+<li>Revocar tu consentimiento en cualquier momento</li>
+</ul>
+
+<p>Para ejercer estos derechos, utiliza la información de contacto en la sección 10. Responderemos de manera oportuna y justa a todas las solicitudes válidas.</p>
+
+<h3><strong>7. Privacidad de los menores</strong></h3>
+<p>La protección de los menores es fundamental para Sprangerworks. Nuestros Servicios no están dirigidos a menores de 13 años (o la edad mínima requerida por la ley local). No recopilamos conscientemente datos personales de menores. Si tenemos conocimiento de dichos datos, los eliminaremos de inmediato.</p>
+
+<h3><strong>8. Transferencias internacionales de datos</strong></h3>
+<p>Dado que Sprangerworks opera a nivel mundial, tus datos pueden transferirse y procesarse fuera de tu país de residencia. Como las normativas varían, adoptamos las garantías legales adecuadas, como las Cláusulas Contractuales Tipo de la UE y otros mecanismos legales, para proteger tus datos de acuerdo con las leyes vigentes.</p>
+
+<h3><strong>9. Disponibilidad del Servicio para no residentes en la UE</strong></h3>
+
+<p><em>a) Disponibilidad</em></p>
+<p>Actualmente, Sprangerworks ofrece sus Servicios exclusivamente dentro de la Unión Europea. Debido a recursos limitados, aún no podemos implementar los requisitos adicionales de protección de datos exigidos en algunas jurisdicciones fuera de la UE.</p>
+
+<p><em>b) Regiones restringidas</em></p>
+<p>Nuestros Servicios no están disponibles en las siguientes regiones debido a regulaciones específicas de privacidad:</p>
+<ul>
+<li>Estados Unidos (incluyendo las leyes estatales CCPA / CPRA y COPPA)</li>
+<li>Corea del Sur (PIPA)</li>
+<li>Turquía (KVKK)</li>
+<li>China (PIPL)</li>
+<li>Brasil (LGPD)</li>
+<li>Japón (APPI)</li>
+<li>Canadá (PIPEDA y leyes provinciales)</li>
+<li>Reino Unido (UK GDPR)</li>
+</ul>
+
+<p>En consecuencia, Sprangerworks no mantiene presencia de mercado ni ofrece activamente sus Servicios en dichas jurisdicciones.</p>
+
+<h3><strong>10. Información de contacto</strong></h3>
+<p>Para preguntas sobre protección de datos o para ejercer tus derechos, contacta:</p>
+
+<p><strong>Responsable del tratamiento:</strong> Johannes Spranger<br>
+Röderweg 36 B, 64625 Bensheim, Germany<br>
+Asunto: <em>Privacy</em><br>
+Correo electrónico: <a href="mailto:sprangerworks@gmail.com" style="color:blue;">sprangerworks@gmail.com</a></p>
+
+<p>Ten en cuenta que solo podemos procesar correctamente las solicitudes si se utiliza la línea de asunto “Privacy”.</p>
+
+`,
+            it: `         
+< h2 style = "text-align:center;" > <strong>Informativa sulla Privacy di Sprangerworks</strong></h2>
+<p style="text-align:center;">Data di entrata in vigore: 7 ottobre 2025</p>
+
+<p>Grazie per la fiducia riposta in Sprangerworks!</p>
+
+<strong>Contenuto</strong>
+<ul>
+<li>Come raccogliamo i dati personali e perché</li>
+<li>Come utilizziamo i dati personali</li>
+<li>I tuoi diritti e le tue opzioni riguardo ai tuoi dati personali</li>
+</ul>
+
+<h3><strong>1. Ambito di validità</strong></h3>
+<p>La presente Informativa sulla Privacy si applica a tutti i giochi, negozi, siti web e servizi correlati di Sprangerworks (collettivamente, il “Servizio”). Possiamo aggiornare la presente Informativa pubblicando una nuova versione su sprangerworks.com. In caso di modifiche significative, ti informeremo come previsto dalla legge, anche tramite notifiche nel Servizio prima della loro entrata in vigore. L'uso continuato del Servizio dopo la data di efficacia implica l'accettazione della versione aggiornata. Utilizzando l’app, l’utente accetta i seguenti termini.</p>
+
+<h3><strong>2. Dati raccolti</strong></h3>
+<p>Le categorie di dati raccolti dipendono dal Servizio utilizzato e dalla legge applicabile.</p>
+
+<p><em>a) Dati raccolti automaticamente</em></p>
+<ul>
+<li>Dati dell’account e dei progressi di gioco, incluso un ID interno di account</li>
+<li>Informazioni sul dispositivo: nome, versione del sistema operativo, tipo di browser, lingua, provider Internet e operatore mobile</li>
+<li>Dati di utilizzo: attività di gioco, interazioni e statistiche di utilizzo del Servizio</li>
+<li>Cookie e tecnologie simili (vedi sezione 5)</li>
+</ul>
+
+<h3><strong>3. Finalità del trattamento dei dati</strong></h3>
+<p>Trattiamo i tuoi dati per scopi commerciali e operativi, tra cui:</p>
+
+<p><em>Uso funzionale</em></p>
+<ul>
+<li>Creare e gestire account</li>
+<li>Consentire l’accesso al Servizio</li>
+<li>Inviare comunicazioni relative al Servizio (ad es. risposte del supporto)</li>
+</ul>
+
+<p><em>Analisi e sviluppo del Servizio</em></p>
+<ul>
+<li>Mantenere e migliorare i profili utente</li>
+<li>Sviluppare e ottimizzare il Servizio e l’esperienza di gioco</li>
+<li>Fornire funzionalità social e interazioni tra la community</li>
+<li>Rispondere a commenti e richieste di supporto</li>
+<li>Facilitare la comunicazione tra utenti</li>
+</ul>
+
+<p><em>Pubblicità e personalizzazione</em></p>
+<p>Con il tuo consenso, possiamo raccogliere e utilizzare identificatori di dispositivi (ad es. IDFA, GAID, indirizzo IP, ID del dispositivo, identificatore del fornitore, versione OS, modello, paese, versione client) per mostrare e personalizzare annunci pubblicitari nel gioco. Quando richiesto dalle leggi sulla privacy, come il GDPR, chiederemo sempre il tuo consenso prima di trattare tali identificatori a fini di pubblicità mirata o comportamentale.</p>
+<p>Quando il consenso è stato fornito, i dati possono essere condivisi con partner pubblicitari (come Google AdMob) per mostrare annunci pertinenti, evitare duplicazioni e misurare l’efficacia. Gli utenti possono gestire il consenso nelle impostazioni del gioco, reimpostare gli identificatori pubblicitari o limitare il tracciamento degli annunci (Android: “Disattiva annunci basati sugli interessi”; iOS: “Limita tracciamento annunci”). I partner gestiscono reti pubblicitarie, facilitano aste e possono elaborare identificatori per rilevare frodi in base al loro legittimo interesse.</p>
+
+<h3><strong>4. Terze parti e divulgazione dei dati</strong></h3>
+<p>I tuoi dati possono essere accessibili a terzi solo nei seguenti casi:</p>
+
+<p><em>a) Fornitori di servizi</em></p>
+<ul>
+<li>Hosting e archiviazione</li>
+<li>Assistenza ai giocatori</li>
+<li>Pubblicità e analisi</li>
+<li>Elaborazione dei pagamenti</li>
+<li>Rilevamento e prevenzione delle frodi</li>
+</ul>
+
+<p><em>b) Altre società e autorità pubbliche</em></p>
+<ul>
+<li>Verificare i pagamenti (ad es. tramite PayPal o servizi simili)</li>
+<li>Prevenire o indagare su frodi</li>
+<li>Rispettare obblighi legali</li>
+<li>Proteggere i diritti, la sicurezza e la proprietà di Sprangerworks, dei nostri utenti o del pubblico</li>
+</ul>
+
+<p><em>c) Partner e integrazioni</em></p>
+<p>Il Servizio può includere funzionalità di partner, come strumenti social, API / SDK e annunci pubblicitari nel gioco. Questi partner possono accedere a dati (IP, identificatori mobili, pagine visitate, posizione, ora di accesso) e operano secondo le proprie politiche sulla privacy. I partner pubblicitari possono utilizzare tali dati per pubblicità basata sugli interessi su servizi di terzi. Per limitare la condivisione dei dati, consulta la sezione “I tuoi diritti e opzioni”.</p>
+
+<h3><strong>5. Cookie e tecnologie simili</strong></h3>
+<p>Noi e i nostri partner utilizziamo cookie, pixel e tecnologie simili per:</p>
+<ul>
+<li>Fornire e personalizzare il Servizio</li>
+<li>Analizzare l’uso e le prestazioni</li>
+<li>Mostrare e misurare annunci pubblicitari</li>
+<li>Prevenire le frodi</li>
+</ul>
+<p>I cookie consentono a noi e ai nostri partner di memorizzare preferenze, tracciare attività e collegare informazioni tra dispositivi e sessioni.</p>
+<p>Possiamo anche utilizzare collegamenti tra dispositivi (“device graph”) per:</p>
+<ul>
+<li>Rilevare e prevenire frodi</li>
+<li>Migliorare la continuità tra dispositivi</li>
+<li>Eseguire analisi, personalizzazione e attribuzione</li>
+<li>Limitare la ripetizione di annunci su più dispositivi</li>
+<li>Fornire pubblicità personalizzata basata sull’utilizzo multi-dispositivo</li>
+</ul>
+<p>Alcuni dei nostri siti utilizzano fornitori terzi di analisi, telemetria e marketing, che operano secondo le proprie politiche di privacy.</p>
+
+<h3><strong>6. I tuoi diritti e opzioni</strong></h3>
+
+<p><em>a) Notifiche push</em></p>
+<p>Possiamo inviarti notifiche push tramite le nostre app mobili. Puoi disattivarle in qualsiasi momento nelle impostazioni del dispositivo.</p>
+
+<p><em>b) Accesso ai tuoi dati</em></p>
+<p>Su richiesta, ti forniremo una copia dei tuoi dati personali tramite posta o altro mezzo sicuro.</p>
+
+<p><em>c) Altri diritti</em></p>
+<ul>
+<li>Correggere dati inesatti</li>
+<li>Richiedere la cancellazione dei tuoi dati</li>
+<li>Opporti o limitare il trattamento e la condivisione dei tuoi dati</li>
+<li>Revocare il consenso in qualsiasi momento</li>
+</ul>
+<p>Per esercitare questi diritti, utilizza i dati di contatto nella sezione 10. Risponderemo in modo tempestivo ed equo a tutte le richieste valide.</p>
+
+<h3><strong>7. Privacy dei minori</strong></h3>
+<p>La protezione dei minori è fondamentale per Sprangerworks. I nostri Servizi non sono destinati a minori di 13 anni (o all’età minima richiesta dalla legge locale). Non raccogliamo consapevolmente dati personali da bambini. Se veniamo a conoscenza di tali dati, li elimineremo immediatamente.</p>
+
+<h3><strong>8. Trasferimenti internazionali di dati</strong></h3>
+<p>Poiché Sprangerworks opera a livello globale, i tuoi dati possono essere trasferiti e trattati al di fuori del tuo paese di residenza. Poiché le normative variano, adottiamo adeguate garanzie legali, come le Clausole Contrattuali Standard dell’UE e altri meccanismi leciti, per proteggere i tuoi dati conformemente alle leggi vigenti.</p>
+
+<h3><strong>9. Disponibilità del Servizio per i non residenti nell’UE</strong></h3>
+
+<p><em>a) Disponibilità</em></p>
+<p>Attualmente, Sprangerworks fornisce i propri Servizi esclusivamente all’interno dell’Unione Europea. A causa di risorse limitate, non siamo ancora in grado di implementare i requisiti aggiuntivi di protezione dei dati richiesti in alcune giurisdizioni extra-UE.</p>
+
+<p><em>b) Regioni soggette a restrizioni</em></p>
+<p>I nostri Servizi non sono disponibili nelle seguenti regioni a causa di specifiche normative sulla privacy:</p>
+<ul>
+<li>Stati Uniti (incluse le leggi statali CCPA / CPRA e COPPA)</li>
+<li>Corea del Sud (PIPA)</li>
+<li>Turchia (KVKK)</li>
+<li>Cina (PIPL)</li>
+<li>Brasile (LGPD)</li>
+<li>Giappone (APPI)</li>
+<li>Canada (PIPEDA e leggi provinciali)</li>
+<li>Regno Unito (UK GDPR)</li>
+</ul>
+<p>Di conseguenza, Sprangerworks non mantiene alcuna presenza di mercato né offre attivamente i propri Servizi in tali giurisdizioni.</p>
+
+<h3><strong>10. Informazioni di contatto</strong></h3>
+<p>Per domande sulla protezione dei dati o per esercitare i tuoi diritti, contatta:</p>
+
+<p><strong>Titolare del trattamento: </strong>Johannes Spranger<br>
+Röderweg 36 B, 64625 Bensheim, Germany<br>
+Oggetto: <em>Privacy</em><br>
+Email: <a href="mailto:sprangerworks@gmail.com" style="color:blue;">sprangerworks@gmail.com</a></p>
+
+<p>Si prega di notare che possiamo elaborare correttamente le richieste solo se viene utilizzata la riga dell’oggetto “Privacy”.</p>
+
+`
+
+        };
+
+        const content = document.getElementById("content");
+        const languageSelect = document.getElementById("language-select");
+        const languageLabelElement = document.getElementById("language-label");
+
+        function updateLanguage() {
+            const lang = languageSelect.value;
+            content.innerHTML = translations[lang];
+            languageLabelElement.textContent = languageLabel[lang];
+        }
+
+        languageSelect.addEventListener("change", updateLanguage);
+        updateLanguage();
+    </script>
+
 </body>
 </html>
